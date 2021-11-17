@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.post-card{
+    align-items: center;
+    border: grey solid 1px;
+    width:  200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+}
+.wrap{
+    width: 1100px;
+    row-gap: 20px;
+    align-items: center;
+    border: grey solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.users-box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+    justify-content: center;
+
+}
+.user-block{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background: papayawhip;
+    border-radius: 15px;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+
+
+}
