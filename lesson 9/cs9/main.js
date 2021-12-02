@@ -35,10 +35,190 @@ let simpsons = [
         photo: 'https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png'
     },
 ];
-// Проітерувати його, створиши для кожного елементу масиву <div class='member'>.
+// Проітерувати його, створиши для кожного елементу масиву <div class=''>.
 // - взяти попередній масив з сімпсонами.
 //     Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу створити окремий блок, та помістити його у div.member
 
-for (const person of simpsons) {
+//
+// for (const person of simpsons) {
+//     let div = document.createElement('div');
+//     div.classList.add('member');
+//     div.innerText = (`${person.name} ${person.surname} ${person.age} ${person.info}`);
+//     let image = document.createElement('img');
+//     image.src = person.photo;
+//
+//
+//     document.body.append(div,image);
+//
+// }
 
-}
+
+// 2 Проітерувати його, створиши для кожного елементу масиву <div class='member'>. Для кожної властивості елементу створити окремий блок, та помістити його у div.member
+
+// for (const person of simpsons) {
+//     let div = document.createElement('div');
+//     div.classList.add('member');
+//
+//     let name = document.createElement("div")
+//     name.innerText = person.name;
+//
+//     let surname = document.createElement("div");
+//     surname.innerText = person.surname;
+//
+//     let age = document.createElement("div");
+//     age.innerText = person.age;
+//
+//     let info = document.createElement('div');
+//     info.innerText = person.info;
+//
+//     let image = document.createElement('img');
+//     image.src = person.photo;
+//
+//
+//     div.append(name,surname,age,info,image)
+//     document.body.appendChild(div);
+// }
+//
+//
+//
+//
+//
+//
+//
+//
+// 3.Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей,
+//     // для властивості modules зробити список з елементами
+//     // Приклад структири знаходиться у файлі example.png
+//
+// //
+let coursesArray = [
+    {
+        title: 'JavaScript Complex',
+        monthDuration: 5,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'node.js']
+    },
+    {
+        title: 'Java Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'java core',
+            'java advanced']
+    },
+    {
+        title: 'Python Complex',
+        monthDuration: 6,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'angular',
+            'aws',
+            'docker',
+            'python core',
+            'python advanced']
+    },
+    {
+        title: 'QA Complex',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'git', 'QA/QC']
+    },
+    {
+        title: 'FullStack',
+        monthDuration: 7,
+        hourDuration: 909,
+        modules: ['html',
+            'css',
+            'js',
+            'mysql',
+            'mongodb',
+            'react',
+            'angular',
+            'aws',
+            'docker',
+            'git',
+            'node.js',
+            'python',
+            'java']
+    },
+    {
+        title: 'Frontend',
+        monthDuration: 4,
+        hourDuration: 909,
+        modules: ['html', 'css', 'js', 'mysql', 'mongodb', 'react', 'angular', 'aws', 'docker', 'git', 'sass']
+    }
+
+];
+// Створити для кожного елементу масиву свій блок, блок розділити блоками, в яких будуть зберігатись значення окремих властивостей,
+// //     // для властивості modules зробити список з елементами
+// //     // Приклад структири знаходиться у файлі example.png
+//
+// let box = document.createElement('div');
+// box.classList.add('wrap')
+// for (const item of coursesArray) {
+//
+//     let title = document.createElement('h2');
+//     title.innerText = item.title;
+//
+//     let monthDuration = document.createElement('p');
+//     monthDuration.innerText = item.monthDuration;
+//
+//     let hourDuration = document.createElement('p');
+//     hourDuration = item.hourDuration;
+//
+//     box.append(title, monthDuration, hourDuration);
+//
+//     for (const element of item.modules) {
+//         let modules = document.createElement('li');
+//         modules.innerText = element;
+//         box.appendChild(modules)
+//     }
+//
+//     let container = document.getElementsByClassName('container');
+//     container[0].appendChild(box);
+//
+//
+//     }
+
+// coursesArray.forEach(item =>{
+//     let div = document.createElement('div');
+//     div.classList.add('wrap');
+//
+//     let duration = document.createElement('div')
+//
+//     let title = document.createElement('h2')
+//     title.innerText = item.title;
+//
+//     let monthDur = document.createElement("p");
+//     monthDur.innerText = item.monthDuration;
+//     let hourDur = document.createElement('p');
+//     hourDur.innerText = item.hourDuration;
+//
+//     duration.append(monthDur,hourDur);
+//     duration.style.display = 'flex';
+//     monthDur.style.width = '25%';
+//     hourDur.style.width = '75%'
+//
+//     let modules = document.createElement('div');
+//     item.modules.forEach(module => {
+//         let moduleDiv = document.createElement('li');
+//         moduleDiv.innerText = module;
+//         modules.appendChild(moduleDiv);
+//
+//     })
+//     div.append(title,duration,modules);
+//     document.body.appendChild(div);
+//
+// })
