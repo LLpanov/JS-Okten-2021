@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Homeworke</title>
+    <style>
+        .knopka {
+            cursor: pointer;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            text-shadow: -1px -1px #000;
+            user-select: none;
+            padding: .8em 2em;
+            outline: none;
+            background-color: #000;
+            background-image: linear-gradient(45deg, rgba(255, 255, 255, .0) 30%, rgba(255, 255, 255, .8), rgba(255, 255, 255, .0) 70%), radial-gradient(190% 100% at 50% 0%, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, .5) 50%, rgba(0, 0, 0, 0) 50%);
+            background-repeat: no-repeat;
+            background-size: 200% 100%, auto;
+            background-position: 200% 0, 0 0;
+            box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
+        }
+
+        .knopka:active {
+            top: 1px;
+            box-shadow: none;
+        }
+
+        .knopka:hover {
+            transition: .5s linear;
+            background-position: -200% 0, 0 0;
+        }
+
+        span {
+            background: #213a2d;
+            color: white;
+            font-size: 16px;
+            border-radius: 2px;
+            font-family: "Arial Black";
+            box-shadow: rgba(0, 0, 0, .3) 0 2px 5px;
+
+        }
+
+        input {
+            width: 300px;
+            font-size: 13px;
+            padding: 6px 0 4px 10px;
+            border: 1px solid #cecece;
+            background: #F6F6f6;
+            border-radius: 8px;
+        }
+        .add{
+            border-radius: 3em;
+            color: #fff;
+            background-image: -webkit-linear-gradient(left, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+            background-image: linear-gradient(to right, rgba(26, 188, 156, 0.6), rgba(26, 188, 156, 0.6) 5%, #1abc9c 5%, #1abc9c 10%, rgba(26, 188, 156, 0.6) 10%, rgba(26, 188, 156, 0.6) 15%, #1abc9c 15%, #1abc9c 20%, rgba(26, 188, 156, 0.6) 20%, rgba(26, 188, 156, 0.6) 25%, #1abc9c 25%, #1abc9c 30%, rgba(26, 188, 156, 0.6) 30%, rgba(26, 188, 156, 0.6) 35%, #1abc9c 35%, #1abc9c 40%, rgba(26, 188, 156, 0.6) 40%, rgba(26, 188, 156, 0.6) 45%, #1abc9c 45%, #1abc9c 50%, rgba(26, 188, 156, 0.6) 50%, rgba(26, 188, 156, 0.6) 55%, #1abc9c 55%, #1abc9c 60%, rgba(26, 188, 156, 0.6) 60%, rgba(26, 188, 156, 0.6) 65%, #1abc9c 65%, #1abc9c 70%, rgba(26, 188, 156, 0.6) 70%, rgba(26, 188, 156, 0.6) 75%, #1abc9c 75%, #1abc9c 80%, rgba(26, 188, 156, 0.6) 80%, rgba(26, 188, 156, 0.6) 85%, #1abc9c 85%, #1abc9c 90%, rgba(26, 188, 156, 0.6) 90%, rgba(26, 188, 156, 0.6) 95%, #1abc9c 95%, #1abc9c 100%);
+            background-position: 0 0;
+            background-size: 100%;
+            -webkit-transition: background 300ms ease-in-out;
+            transition: background 300ms ease-in-out;
+            cursor: pointer;
+            width: 180px;
+            height: 50px;
+            color: yellow;
+
+        }
+        .add:hover{
+            background-position: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<form name="user">
+    <p><input type="text" name="name"> <span>name</span>
+    <p><input type="number" name="age"> <span>age</span></p>
+    <button id="bnt">Save</button>
+</form>
+
+<form name="cars">
+    <p><input type="text" name="model"> Model </p>
+    <p><input type="text" name="type"> Type </p>
+    <p><input type="number" name='volume'> Volume </p>
+    <button ID="add">Save Car</button>
+</form>
+
+<script src="main.js"></script>
+</body>
+</html>
