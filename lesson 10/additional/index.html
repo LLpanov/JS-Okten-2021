@@ -7,26 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Additonal</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+
         }
-        .users-box{
+
+        .users-box {
             background: silver;
             width: 200px;
             height: 100px;
             cursor: pointer;
 
         }
-        #end{
+
+        #end {
             padding: 5px;
         }
+
         .popup {
             width: 400px;
             height: 200px;
             background: rgba(103, 115, 178, 0.5);
             position: relative;
-            top:100px;
+            top: 100px;
             left: 300px;
             color: white;
             display: flex;
@@ -35,10 +41,43 @@
             margin-top: 10px;
             border-radius: 10px;
         }
-        p{
+
+        p {
             padding-top: 90px;
+        }
 
+        #gallery {
+            width: 640px;
+            margin: 20px auto;
+            text-align: center;
+        }
 
+        #gallery .photos img {
+            width: 100%;
+            display: none;
+        }
+
+        #gallery .photos img:first-child {
+            display: block;
+        }
+
+        button {
+            margin-top: 20px;
+            width: 180px;
+            height: 60px;
+            cursor: pointer;
+            background: transparent;
+            border: 1px solid #91C9FF;
+            outline: none;
+            transition: 1s ease-in-out;
+        }
+        button:hover{
+            transition: 1s ease-in-out;
+            background: #4F95DA;
+        }
+        img{
+            background-size: contain;
+            min-height:460px;
         }
 
     </style>
@@ -47,6 +86,20 @@
 <div class="users-box">
     <p id="end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, doloribus!</p>
 </div>
+<div id="gallery">
+    <div class="photos">
+        <img src="1.png">
+        <img src="2.png">
+        <img src="3.png">
+        <img src="4.png">
+        <img src="5.png">
+    </div>
+    <div class="buttons">
+        <button class="prev">Назад</button>
+        <button class="next">Вперед</button>
+    </div>
+</div>
+
 <script src="main.js"></script>
 </body>
 </html>
