@@ -79,6 +79,12 @@
             background-size: contain;
             min-height:460px;
         }
+        form{
+            background: rgba(16, 205, 241, 0.5);
+        }
+        legend{
+            font-weight: bolder;
+        }
 
     </style>
 </head>
@@ -86,6 +92,7 @@
 <div class="users-box">
     <p id="end">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, doloribus!</p>
 </div>
+<hr>
 <div id="gallery">
     <div class="photos">
         <img src="1.png">
@@ -99,6 +106,16 @@
         <button class="next">Вперед</button>
     </div>
 </div>
+<hr>
+<form name="f1">
+    <legend>Users Filter</legend>
+    <input type="checkbox" id="status" name="status" > users false
+    <hr>
+    <input type="checkbox" id="age" name="age" > 29 years
+    <hr>
+    <input type="checkbox" id="city" name="city"> City Kiyv
+</form>
+
 
 <script src="main.js"></script>
 </body>
