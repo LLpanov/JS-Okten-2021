@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Additonal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            column-gap: 10px;
+            width: 100%;
+            margin-left: 10px;
+            margin-top: 10px;
+
+
+
+        }
+        .blocks{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            background-color: #3498db;
+            row-gap: 5px;
+            height: fit-content;
+            border-radius: 5px;
+
+
+        }
+        button{
+            width: 100%;cursor: pointer ;
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 0 20px;
+            outline: none;
+            border: none;
+            border-radius: 4px;
+            height: 32px;
+            line-height: 32px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #fff;
+            background-color: #3775dd;
+            box-shadow: 0 2px #21487f;
+            cursor: pointer;
+            user-select: none;
+            appearance: none;
+            touch-action: manipulation;
+            vertical-align: top;
+
+        }
+        button :hover{
+            background-color: #002fed;
+        }
+        button:active{
+            background-color: #2f599e !important;
+        }
+        button:focus-visible{
+            box-shadow: 0 0 0 3px lightskyblue;
+        }
+        button:disabled{
+            background-color: #6c87b5;
+            pointer-events: none;
+        }
+
+
+    </style>
+</head>
+<body>
+<script src="add.js"></script>
+</body>
+</html>

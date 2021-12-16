@@ -4,11 +4,7 @@
 // Всі характеристики повинні мати свої блоки всередені div.post
 // https://jsonplaceholder.typicode.com/posts
 
-// fetch(`https://jsonplaceholder.typicode.com/posts`)
-//     .then((response) => response.json())
-//     .then((users) => {
-//         let container = document.createElement('div');
-//         container.classList.toggle('wrap');
+//
 //
 //         for (const user of users) {
 //             let div = document.createElement('div');
@@ -37,25 +33,25 @@
 // Всі характеристики повинні мати свої блоки всередені div.comment
 // https://jsonplaceholder.typicode.com/comments
 
-fetch(`https://jsonplaceholder.typicode.com/comments`)
-    .then((response) => response.json())
-    .then((comments) => {
-        let twoglobaldiv = document.createElement('div')
-        twoglobaldiv.classList.add('wrap');
-
-        for (const comment of comments) {
-            let div = document.createElement('div');
-            div.classList.toggle('comentars');
-            div.innerHTML = `<h2>Post Id - ${comment.postId}</h2>
-                             <h3>id - ${comment.id}</h3>
-                             <h4>name - ${comment.name}</h4>
-                             <h5>email - ${comment.email}</h5>
-                             <span>Body :</span> ${comment.body}<p>`
-
-            twoglobaldiv.appendChild(div);
-            document.body.appendChild(twoglobaldiv);
-        }
-    });
-
+// fetch(`https://jsonplaceholder.typicode.com/comments`)
+//     .then((response) => response.json())
+//     .then((comments) => {
+//         let twoglobaldiv = document.createElement('div')
+//         twoglobaldiv.classList.add('wrap');
+//
+//         for (const comment of comments) {
+//             let div = document.createElement('div');
+//             div.classList.toggle('comentars');
+//             div.innerHTML = `<h2>Post Id - ${comment.postId}</h2>
+//                              <h3>id - ${comment.id}</h3>
+//                              <h4>name - ${comment.name}</h4>
+//                              <h5>email - ${comment.email}</h5>
+//                              <span>Body :</span> ${comment.body}<p>`
+//
+//             twoglobaldiv.appendChild(div);
+//             document.body.appendChild(twoglobaldiv);
+//         }
+//     });
+//
 
 
