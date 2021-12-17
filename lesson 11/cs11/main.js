@@ -30,7 +30,7 @@ for (let user of users) {
     let button = document.createElement('button');
     button.innerText = "Додати до улюблених";
 
-    button.onclick = () => {
+    button.onsubmit = () => {
         let favorites = JSON.parse(localStorage.getItem('key')) || [];
 
         favorites.push(user);

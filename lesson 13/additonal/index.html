@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Additonal13</title>
+    <style>
+       .form-group{
+           display: flex;
+           flex-direction: column;
+           justify-content: flex-start;
+           row-gap: 10px;
+           width: 20%;
+       }
+       #btn{
+           width: 100%;
+           background-color: #91C9FF;
+           cursor: pointer;
+           border-radius: 5px;
+           border: none;
+       }
+       input {
+           width: 300px;
+           font-size: 13px;
+           padding: 6px 0 4px 10px;
+           border: 1px solid #cecece;
+           background: #F6F6f6;
+           border-radius: 8px;
+       }
+       .btn2{
+           width: 100%;
+           background-color: #91C9FF;
+           cursor: pointer;
+           border-radius: 5px;
+           text-align: center;
+           text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+<form action="list.html" name="f1">
+    <div class="form-group">
+        <label> Назва товару
+            <input type="text" class="form-control" id="product-name">
+        </label>
+        <label> Кількість товару
+            <input type="number" class="form-control" id="how-many">
+        </label> Ціна товару
+        <label>
+            <input type="number" class="form-control" id="price">
+        </label>
+        <label> Картинка
+            <input type="url" class="form-control" id="img">
+        </label>
+
+        <button id="btn">Sumbit</button>
+        <a class="btn2" href="list.html">Link</a>
+    </div>
+</form>
+
+
+<script src="main.js"></script>
+</body>
+</html>
